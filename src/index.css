@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  background-color: var(--primary-bg-color);
+  font-family: var(--primary-font-family);
+  color: var(--primary-color);
+}
+body {
+  margin: 0;
+  background-color: #1A1626;
+  scroll-behavior: smooth;
+}
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
