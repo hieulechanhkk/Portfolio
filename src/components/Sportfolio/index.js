@@ -19,11 +19,11 @@ function Sportfolio(props) {
                 <div className='portfolio-item'>
                     <img className='portfolio-gif' src={traveler}></img>
                     <div className='portfolio-information'>
-                        <h3>Traveler</h3>
-                        <p>Website adaptable to all devices, with ui components and animated interactions.</p>
+                        <h3>Portfolio</h3>
+                        <p>My Portfolio deployed on Vercel. You can see all my information and contact me here !</p>
                         <div className='portfolio-btn'>
-                            <a href='https://traveler-site.vercel.app/' target='_blank'>Demo</a>
-                            <a href='https://github.com/hieulechanhkk/traveler-reactjs' target='_blank'>Source</a>
+                            <a href='https://portfolio-dzt1.vercel.app/' target='_blank'>Demo</a>
+                            <a href='https://github.com/hieulechanhkk/Portfolio' target='_blank'>Source</a>
                         </div>
                     </div>
                 </div>
