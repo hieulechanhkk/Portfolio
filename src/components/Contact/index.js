@@ -21,20 +21,20 @@ function Contact(props) {
                     <h3 className='primary-color'></h3>
                     <div className='contact-method'>
                         <div>
-                            <MdLocationPin></MdLocationPin>
+                            <MdLocationPin className="contact-logo"></MdLocationPin>
                             <p>Address: Ho Chi Minh City, Vietnam</p>
                         </div>
                         <div>
-                            <BsFillPhoneFill></BsFillPhoneFill>
+                            <BsFillPhoneFill className="contact-logo"></BsFillPhoneFill>
                             <p>Phone: (+84) 813 908 117</p>
                         </div>
                         <div>
-                            <MdEmail></MdEmail>
+                            <MdEmail className="contact-logo"></MdEmail>
                             <p>Email: hieulechanhkk@gmail.com</p>
                         </div>
                         <div>
-                            <AiFillHome></AiFillHome>
-                            <p>Website: https://www.facebook.com</p>
+                            <AiFillHome className="contact-logo"></AiFillHome>
+                            <p>Website: <a href='https://portfolio-dzt1.vercel.app/' target='_blank'>https://portfolio-dzt1.vercel.app</a></p>
                         </div>
                     </div>
                 </div>

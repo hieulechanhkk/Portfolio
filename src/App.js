@@ -12,6 +12,8 @@ import Slider from 'react-slick';
 import Footer from './components/Footer';
 import Aos from 'aos';
 import { MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md'
+import {FiHome, FiUser, FiPhone, FiBox, FiTriangle} from 'react-icons/fi'
+
 function App(props) {
   const [mode, setMode] = useState('dark')
 
@@ -41,6 +43,13 @@ function App(props) {
             <a href='#contact'>Contact</a>
             <a className='mode'>{handleScreenMode()}</a>
           </ul>
+        </div>
+        <div className="menu-bar--mobile">
+          <FiHome className='bar-item--mobile'></FiHome>
+          <FiUser className='bar-item--mobile'></FiUser>
+          <FiBox className='bar-item--mobile'></FiBox>
+          <FiTriangle className='bar-item--mobile'></FiTriangle>
+          <FiPhone className='bar-item--mobile'></FiPhone>
         </div>
         <Home></Home>
         <About></About>

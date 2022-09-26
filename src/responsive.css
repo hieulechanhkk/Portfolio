@@ -1,7 +1,92 @@
 /* 768px - 959px width */
-
+:root {
+    --primary-bg-color: #1A1626;
+    --primary-color: #FFFFFF;
+    --primary-color-hover: #b3b3b3;
+    --primary-font-family: 'Poppins', sans-serif;
+    --second-bg-color: #6E5FDE;
+    --third-bg-color: #232032;
+    --paragraph-color: #9b9aa4;
+    --second-bg-color-hover: #5044a7;
+    /* sizePage */
+  
+    --width-slide: 100%;
+    --heigh-slide: 100vh;
+  }
 @media screen and (min-width: 768px) and (max-width: 959px) {
     .menu-bar ul {
         width: 67%;
+    }
+}
+
+@media only screen and (max-width: 889px) {
+    .contact-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .break--mobile {
+        display: inline;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .menu-bar--mobile {
+        position: fixed;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 80%;
+        height: 50px;
+        background-color: rgba(110, 95, 222, 0.3);
+        /* background-color: rgba(230, 230, 230, 0.3); */
+        z-index: 1000;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .bar-item--mobile {
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .home {
+        padding: 3rem 0;
+    }
+    .home-website {
+        display: none !important;
+    }
+    .home-information {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .home div:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content p {
+        display: none;
+    }
+    .home-avatar {
+        width: 100%;
+        padding: 3rem 0 ;
+    }
+    .box {
+        width: 60vw;
+        height: 60vw;
+    }
+    .btn-ct-me {
+        width: 100%;
+        padding: 5% 10%;
+        transform: translateX(-10%);
+        margin-top: 1.5rem;
+    }
+    .footer {
+        padding: 3% 0 5rem 0;
     }
 }
