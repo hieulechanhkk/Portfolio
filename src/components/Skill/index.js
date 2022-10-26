@@ -1,6 +1,7 @@
 import React from 'react';
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiRedux, SiFirebase, SiFigma, SiArduino, SiGit } from 'react-icons/si'
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiRedux, SiFirebase, SiFigma, SiArduino, SiGit, SiTailwindcss } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
+import { TbBrandNextjs} from 'react-icons/tb'
 function Skill(props) {
     return (
         <div id='skills' className='skill'>
@@ -31,6 +32,16 @@ function Skill(props) {
                 </div>
                 <div data-aos="zoom-in"
                     data-aos-duration="950" className='skill-item'>
+                    <TbBrandNextjs size={'2rem'}></TbBrandNextjs>
+                    <div>NextJS</div>
+                </div>
+                <div data-aos="zoom-in"
+                    data-aos-duration="950" className='skill-item'>
+                    <SiTailwindcss size={'2rem'}></SiTailwindcss>
+                    <div>Tailwind</div>
+                </div>
+                <div data-aos="zoom-in"
+                    data-aos-duration="950" className='skill-item'>
                     <SiRedux size={'2rem'}></SiRedux>
                     <div>Redux</div>
                 </div>
@@ -47,7 +58,7 @@ function Skill(props) {
                 <div data-aos="zoom-in"
                     data-aos-duration="950" className='skill-item'>
                     <SiArduino size={'2rem'}></SiArduino>
-                    <div>Internet Of Things</div>
+                    <div>IoT</div>
                 </div>
                 <div data-aos="zoom-in"
                     data-aos-duration="950" className='skill-item'>

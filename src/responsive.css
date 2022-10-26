@@ -89,4 +89,51 @@
     .footer {
         padding: 3% 0 5rem 0;
     }
+
+    .about {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .about-information {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about-introduction {
+        width: 100%;
+    }
+
+    .about-education {
+        width: 100%;
+    }
+
+    .skills-container {
+        
+    }
+    .skill-item {
+        width: 32%;
+    }
+    .portfolio {
+        gap:1rem;
+    }
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-gif {
+        width: 100%;
+    }
+    .portfolio-information {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contact-info {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
 }

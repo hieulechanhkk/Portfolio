@@ -12,7 +12,7 @@ import Slider from 'react-slick';
 import Footer from './components/Footer';
 import Aos from 'aos';
 import { MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md'
-import {FiHome, FiUser, FiPhone, FiBox, FiTriangle} from 'react-icons/fi'
+import { FiHome, FiUser, FiPhone, FiBox, FiTriangle } from 'react-icons/fi'
 
 function App(props) {
   const [mode, setMode] = useState('dark')
@@ -45,11 +45,15 @@ function App(props) {
           </ul>
         </div>
         <div className="menu-bar--mobile">
-          <FiHome className='bar-item--mobile'></FiHome>
-          <FiUser className='bar-item--mobile'></FiUser>
-          <FiBox className='bar-item--mobile'></FiBox>
-          <FiTriangle className='bar-item--mobile'></FiTriangle>
-          <FiPhone className='bar-item--mobile'></FiPhone>
+          <a href='#'>
+            <FiHome className='bar-item--mobile'></FiHome>
+          </a>
+          <a href='#about'>
+            <FiUser className='bar-item--mobile'></FiUser>
+          </a>
+          <a href='#skills'><FiBox className='bar-item--mobile'></FiBox></a>
+          <a href='#portfolio'><FiTriangle className='bar-item--mobile'></FiTriangle></a>
+          <a href='#contact'><FiPhone className='bar-item--mobile'></FiPhone></a>
         </div>
         <Home></Home>
         <About></About>
