@@ -12,7 +12,7 @@ function Home(props) {
                 </div>
                 <div className='home-information'>
                     <div className='home-content'>
-                        <h1>Hi, I'am<br className='break--mobile'/> Nguyen Duc Hieu</h1>
+                        <h1>Hi, I'm<br className='break--mobile'/> Nguyen Duc Hieu</h1>
                         <h3>Front-end Developer</h3>
                         <p>I am currently in my final year at University of Information Technology
                             (UIT). I aspire to become a Full-Stack developer. I built many different
