@@ -277,7 +277,7 @@ p {
   left: -20%;
   background-size: 100%;
   background-position: center center;
-  background-image: url('./avatar.jpg');
+  background-image: url('./assets/avatar.jpg');
   animation: spin 12s linear infinite reverse;
 }
 
@@ -305,12 +305,12 @@ p {
 
 .btn-srcoll-down {
   animation: pulse 2s linear infinite;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: .5s;
 }
 
 .btn-srcoll-down:hover {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 

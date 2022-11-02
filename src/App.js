@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import './responsive.css'
+import '../src/stylesheet/responsive.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Home from './components/Home';
 import About from './components/About';

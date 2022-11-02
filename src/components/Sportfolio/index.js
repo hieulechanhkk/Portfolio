@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import traveler from './../../travler.gif'
-import portfolio from '../../portfolio.gif'
-import fooddelivery from '../../fooddelivery.gif'
+import traveler from '../../assets/travler.gif'
+import portfolio from '../../assets/portfolio.gif'
+import fooddelivery from '../../assets/fooddelivery.gif'
 function Sportfolio(props) {
     var settings = {
         dots: true,
