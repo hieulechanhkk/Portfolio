@@ -12,6 +12,9 @@
     background-color: var(--primary-lightmode) !important;
     color: #6E5FDE !important;
 }
+.mode--light{
+    color: #6E5FDE !important;
+}
 .second--Light {
     background-color: var(--second-lightmode);
     color: white;

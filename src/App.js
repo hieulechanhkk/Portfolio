@@ -42,7 +42,7 @@ function App(props) {
             <a className={mode === "dark" ? "" : "light"} href='#skills'>Skills</a>
             <a className={mode === "dark" ? "" : "light"} href='#portfolio'>Portfolio</a>
             <a className={mode === "dark" ? "" : "light"} href='#contact'>Contact</a>
-            <a className={mode === "dark" ? "mode" : "mode light"}>{handleScreenMode()}</a>
+            <a className={mode === "dark" ? "mode" : "mode mode--light"}>{handleScreenMode()}</a>
           </ul>
         </div>
         <div className="menu-bar--mobile">
@@ -55,6 +55,7 @@ function App(props) {
           <a href='#skills'><FiBox className='bar-item--mobile'></FiBox></a>
           <a href='#portfolio'><FiTriangle className='bar-item--mobile'></FiTriangle></a>
           <a href='#contact'><FiPhone className='bar-item--mobile'></FiPhone></a>
+          <a className={`mode`}>{handleScreenMode()}</a>
         </div>
         <Home screenMode={mode}></Home>
         <About screenMode={mode}></About>
