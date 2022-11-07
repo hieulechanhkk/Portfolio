@@ -4,8 +4,9 @@ import { BsInstagram } from 'react-icons/bs'
 import { SiGithub } from 'react-icons/si'
 import { HiOutlineCode } from 'react-icons/hi'
 function Footer(props) {
+    const {screenMode} = props;
     return (
-        <div className='footer'>
+        <div className={`footer ${screenMode==="dark" ? "" : "second--Light"}`}>
             <div className='footer-socials'>
                 <a href='https://www.facebook.com/nguyenduchieu.user/' target='_blank'><FaFacebookF className='item'></FaFacebookF></a>
                 <a href='https://www.instagram.com/u.e.i.h/' target='_blank'><BsInstagram className='item'></BsInstagram></a>
@@ -15,7 +16,7 @@ function Footer(props) {
                 <HiOutlineCode className='faLaptop' size={'25px'}></HiOutlineCode>
                 <div>HieuNguyen</div>
             </div>
-            <p className='copyright'>
+            <p>
                 © 2022 Hieu Nguyen. All Rights Reserved
             </p>
         </div>

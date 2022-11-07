@@ -11,59 +11,60 @@ function Sportfolio(props) {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+    const { screenMode } = props;
+    const data = [
+        {
+            name: "My Portfolio",
+            des: "My Portfolio deployed on Vercel. You can see all my information and contact me here !",
+            img: portfolio,
+            demo: "https://portfolio-dzt1.vercel.app/",
+            source: "https://github.com/hieulechanhkk/Portfolio"
+        },
+        {
+            name: "Traveler",
+            des: "This is the app that helps people buy train tickets convenient, anytime, anywhere from right on your phone or laptop.",
+            img: traveler,
+            demo: "https://portfolio-dzt1.vercel.app/",
+            source: "https://github.com/hieulechanhkk/Portfolio"
+        },
+        {
+            name: "Bella Onojie's Food",
+            des: "Food delivery Website, with ui components and animated interactions. Responsive all devices.",
+            img: fooddelivery,
+            demo: "https://exercise-one-naver-byeq.vercel.app/",
+            source: "https://github.com/hieulechanhkk/ExerciseOne-Naver"
+        },
+        {
+            name: "Avion Ecommerce",
+            des: "My Portfolio deployed on Vercel. You can see all my information and contact me here !",
+            img: portfolio,
+            demo: "https://portfolio-dzt1.vercel.app/",
+            source: "https://github.com/hieulechanhkk/Portfolio"
+        }
+    ]
+    const printProjects = data.map((item, index) => {
+        return (
+            <div className='portfolio-item'>
+                    <img className='portfolio-gif' src={item?.img}></img>
+                    <div className='portfolio-information'>
+                        <h3>{item?.name}</h3>
+                        <p className = {screenMode === "dark" ? "" : "text--light"}>{item?.des}</p>
+                        <div className={`portfolio-btn`}>
+                            <a href={item?.demo} className={`${screenMode === "dark" ? "" : "light"}`} target='_blank'>Demo</a>
+                            <a href={item?.source} className={`${screenMode === "dark" ? "" : "light"}`} target='_blank'>Source</a>
+                        </div>
+                    </div>
+                </div>
+        )
+    });
     return (
-        <div id='portfolio' className='portfolio'
+        <div id='portfolio' className={`portfolio ${screenMode === "dark" ? "" : "second--Light"}`}
             data-aos="fade-down"
             data-aos-duration="1050">
             <h1>Portfolio</h1>
             <div className='under-line'></div>
             <Slider className='slider' {...settings}>
-                <div className='portfolio-item'>
-                    <img className='portfolio-gif' src={portfolio}></img>
-                    <div className='portfolio-information'>
-                        <h3>Portfolio</h3>
-                        <p>My Portfolio deployed on Vercel. You can see all my information and contact me here !</p>
-                        <div className='portfolio-btn'>
-                            <a href='https://portfolio-dzt1.vercel.app/' target='_blank'>Demo</a>
-                            <a href='https://github.com/hieulechanhkk/Portfolio' target='_blank'>Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='portfolio-item'>
-                    <img className='portfolio-gif' src={traveler}></img>
-                    <div className='portfolio-information'>
-                        <h3>Traveler</h3>
-                        <p>This is the app that helps people buy train tickets
-                            convenient, anytime, anywhere from right on your phone or
-                            laptop.</p>
-                        <div className='portfolio-btn'>
-                            <a href='https://webproject-iot.vercel.app/' target='_blank'>Demo</a>
-                            <a href='https://github.com/hieulechanhkk/NT532M21_Project_Group6.git' target='_blank'>Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='portfolio-item'>
-                    <img className='portfolio-gif' src={fooddelivery}></img>
-                    <div className='portfolio-information'>
-                        <h3>Bella Onojie's Food</h3>
-                        <p>Food delivery Website, with ui components and animated interactions. Responsive all devices.</p>
-                        <div className='portfolio-btn'>
-                            <a href='https://exercise-one-naver-byeq.vercel.app/' target='_blank'>Demo</a>
-                            <a href='https://github.com/hieulechanhkk/ExerciseOne-Naver' target='_blank'>Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='portfolio-item'>
-                    <img className='portfolio-gif' src={traveler}></img>
-                    <div className='portfolio-information'>
-                        <h3>Modern website</h3>
-                        <p>Website adaptable to all devices, with ui components and animated interactions.</p>
-                        <div className='portfolio-btn'>
-                            <a>Demo</a>
-                            <a>Source</a>
-                        </div>
-                    </div>
-                </div>
+                {printProjects}
             </Slider>
         </div>
     );

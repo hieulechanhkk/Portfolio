@@ -1,15 +1,16 @@
 import React from 'react';
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiRedux, SiFirebase, SiFigma, SiArduino, SiGit, SiTailwindcss } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
-import { TbBrandNextjs} from 'react-icons/tb'
+import { TbBrandNextjs } from 'react-icons/tb'
 function Skill(props) {
+    const { screenMode } = props
     return (
         <div id='skills' className='skill'>
             <h1 data-aos="zoom-in"
-                    data-aos-duration="950">Skills</h1>
+                data-aos-duration="950">Skills</h1>
             <div data-aos="zoom-in"
-                    data-aos-duration="950" className='under-line'></div>
-            <div className='skills-container'>
+                data-aos-duration="950" className='under-line'></div>
+            <div className={`skills-container ${screenMode==="dark" ? "" : "text--gray"}`}>
                 <div data-aos="zoom-in"
                     data-aos-duration="950" className='skill-item'>
                     <SiHtml5 size={'2rem'}></SiHtml5>

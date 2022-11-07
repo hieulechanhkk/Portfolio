@@ -3,6 +3,7 @@ import { MdLocationPin, MdEmail } from 'react-icons/md'
 import { BsFillPhoneFill } from 'react-icons/bs'
 import { AiFillHome } from 'react-icons/ai'
 function Contact(props) {
+    const { screenMode } = props;
     return (
         <div id='contact' className='contact'>
             <h1 data-aos="zoom-in"
@@ -19,22 +20,22 @@ function Contact(props) {
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="950">
                     <h3 className='primary-color'></h3>
-                    <div className='contact-method'>
+                    <div className={`contact-method`}>
                         <div>
                             <MdLocationPin className="contact-logo"></MdLocationPin>
-                            <p>Address: Ho Chi Minh City, Vietnam</p>
+                            <p className={`${screenMode==="dark" ? "" : "text--gray"}`}>Address: Ho Chi Minh City, Vietnam</p>
                         </div>
                         <div>
                             <BsFillPhoneFill className="contact-logo"></BsFillPhoneFill>
-                            <p>Phone: (+84) 813 908 117</p>
+                            <p className={`${screenMode==="dark" ? "" : "text--gray"}`}>Phone: (+84) 813 908 117</p>
                         </div>
                         <div>
                             <MdEmail className="contact-logo"></MdEmail>
-                            <p>Email: hieulechanhkk@gmail.com</p>
+                            <p className={`${screenMode==="dark" ? "" : "text--gray"}`}>Email: hieulechanhkk@gmail.com</p>
                         </div>
                         <div>
                             <AiFillHome className="contact-logo"></AiFillHome>
-                            <p>Website: <a href='https://portfolio-dzt1.vercel.app/' target='_blank'>https://portfolio-dzt1.vercel.app</a></p>
+                            <p className={`${screenMode==="dark" ? "" : "text--gray"}`}>Website: <a href='https://portfolio-dzt1.vercel.app/' className={`${screenMode==="dark" ? "" : "text--gray"}`} target='_blank'>https://portfolio-dzt1.vercel.app</a></p>
                         </div>
                     </div>
                 </div>
@@ -42,13 +43,13 @@ function Contact(props) {
                     <h3 className='primary-color'></h3>
                     <div className='contact-send'>
                         <div>
-                            <input className='input-focus' placeholder='Name'></input>
+                            <input className={`input-focus`} placeholder='Name'></input>
                             <input className='input-focus' placeholder='Email'></input>
                         </div>
                         <input className='contact-input' placeholder='Subject'></input>
                         <textarea className='contact-input' placeholder='Message' maxLength={'1000'}></textarea>
                     </div>
-                    <button className='btn-send'>Send</button>
+                    <button className={`btn-send`}>Send</button>
                 </div>
             </div>
         </div>

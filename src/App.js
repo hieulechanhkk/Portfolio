@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import '../src/stylesheet/responsive.css'
+import '../src/stylesheet/screenMode.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Home from './components/Home';
 import About from './components/About';
@@ -27,8 +28,8 @@ function App(props) {
   Aos.init();
   return (
     <>
-      <div className='App '>
-        <div className='menu-bar'>
+      <div className={`App ${mode ==="dark" ? "" : "light"}`}>
+        <div className={`menu-bar ${mode==='dark' ? "" : "light"}`}>
           <a href='#'>
             <div className='Intro'>
               <HiOutlineCode className='faLaptop' size={'25px'}></HiOutlineCode>
@@ -36,12 +37,12 @@ function App(props) {
             </div>
           </a>
           <ul>
-            <a href='#'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#skills'>Skills</a>
-            <a href='#portfolio'>Portfolio</a>
-            <a href='#contact'>Contact</a>
-            <a className='mode'>{handleScreenMode()}</a>
+            <a className={mode === "dark" ? "" : "light"} href='#'>Home</a>
+            <a className={mode === "dark" ? "" : "light"} href='#about'>About</a>
+            <a className={mode === "dark" ? "" : "light"} href='#skills'>Skills</a>
+            <a className={mode === "dark" ? "" : "light"} href='#portfolio'>Portfolio</a>
+            <a className={mode === "dark" ? "" : "light"} href='#contact'>Contact</a>
+            <a className={mode === "dark" ? "mode" : "mode light"}>{handleScreenMode()}</a>
           </ul>
         </div>
         <div className="menu-bar--mobile">
@@ -55,14 +56,13 @@ function App(props) {
           <a href='#portfolio'><FiTriangle className='bar-item--mobile'></FiTriangle></a>
           <a href='#contact'><FiPhone className='bar-item--mobile'></FiPhone></a>
         </div>
-        <Home></Home>
-        <About></About>
-        <Skill></Skill>
-        <Sportfolio></Sportfolio>
-        <Contact></Contact>
+        <Home screenMode={mode}></Home>
+        <About screenMode={mode}></About>
+        <Skill screenMode={mode}></Skill>
+        <Sportfolio screenMode={mode}></Sportfolio>
+        <Contact screenMode={mode}></Contact>
       </div>
-
-      <Footer></Footer>
+      <Footer screenMode={mode}></Footer>
     </>
   );
 }

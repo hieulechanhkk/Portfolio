@@ -84,7 +84,7 @@ p {
 }
 /* App */
 .App {
-  width: 80%;
+  padding: 0 10%;
   height: auto;
   margin: 0 auto;
   background-color: var(--primary-bg-color);
@@ -554,6 +554,7 @@ p {
   font-family: var(--primary-font-family);
   font-weight: 500;
   transition: .4s;
+  border-width: 0;
 }
 .btn-send:hover {
   padding: calc(2% + 1px) calc(4% + 2px);

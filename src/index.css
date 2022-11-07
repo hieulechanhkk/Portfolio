@@ -1,12 +1,12 @@
 html {
   scroll-behavior: smooth;
   margin: 0 auto;
-  background-color: var(--primary-bg-color);
   font-family: var(--primary-font-family);
-  color: var(--primary-color);
 }
 body {
   margin: 0;
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
   background-color: #1A1626;
   scroll-behavior: smooth;
 }
